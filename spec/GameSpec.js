@@ -1,6 +1,8 @@
 describe("Game", function(){
-	it("Should have at last two players", function(){
+	it("Should add a player", function(){
 		var game = Game.create();
-		expect( game.numPlayers()).toEqual(2);
-	})
+		var player = {};
+		expect(game.addPlayer(player).numPlayers()).toEqual(1);
+	});
+
 });
