@@ -20,8 +20,16 @@ describe("Game", function(){
 	describe("That is not set up", function(){
 
 		it("Should return false if there are no players", function(){
-			expect(game.isSetted()).toBeTruthy();
+			expect(game.isSetted()).toBeFalsy();
 		});
+
+		/*
+		it("Should return false if there is one player", function(){
+			var player = {};
+			game.addPlayer(player);
+			expect(game.isSetted()).
+		})
+		*/
 	})
 
 

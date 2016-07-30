@@ -19,6 +19,6 @@ var Game = {
 	},
 
 	isSetted: function(){
-		return true;
+		return false;
 	}
 }
