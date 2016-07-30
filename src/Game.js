@@ -15,6 +15,6 @@ var Game = {
 	},
 
 	numPlayers: function(){
-		return 1;
+		return this.players.length;
 	}
 }
