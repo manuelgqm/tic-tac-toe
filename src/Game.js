@@ -16,5 +16,9 @@ var Game = {
 
 	numPlayers: function(){
 		return this.players.length;
+	},
+
+	isSetted: function(){
+		return true;
 	}
 }
