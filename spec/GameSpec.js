@@ -23,14 +23,12 @@ describe("Game", function(){
 			expect(game.isSetted()).toBeFalsy();
 		});
 
-		/*
 		it("Should return false if there is one player", function(){
 			var player = {};
 			game.addPlayer(player);
-			expect(game.isSetted()).
+			expect(game.isSetted()).toBeFalsy();
 		})
-		*/
-	})
+	});
 
 
 });
