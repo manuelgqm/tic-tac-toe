@@ -34,7 +34,7 @@ var Game = {
 	},
 
 	start: function(){
-		return true;
+		return this.isSetted();
 	},
 
 	currentTurnNumber:  function(){

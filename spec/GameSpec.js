@@ -28,6 +28,10 @@ describe("A Game", function(){
 			game.addPlayer(player);
 			expect(game.isSetted()).toBeFalsy();
 		});
+
+		it("should return false if starts", function(){
+			expect(game.start()).toBeFalsy();
+		});
 	});
 
 	describe("that is set up", function(){
