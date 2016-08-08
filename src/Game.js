@@ -33,9 +33,7 @@ var Game = {
 		return this.turns.length;
 	},
 
-	setUp:  function(){
-		var player1 = {};
-		var player2 = {};
+	setUp: function(player1, player2){
 		this.addPlayer(player1);
 		this.addPlayer(player2);
 	},

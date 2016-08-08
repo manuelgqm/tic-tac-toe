@@ -6,7 +6,7 @@ describe("A Game", function(){
 
 	it("should add a player", function(){
 		var player = {};
-		expect(game.addPlayer(player).numPlayers()).toEqual(1);
+		expect(game.addPlayer(player).numPlayers()).toEqual(1); //FIX: assert to expect inpected player is a player
 	});
 
 	it("should add two players", function(){
@@ -16,7 +16,7 @@ describe("A Game", function(){
 		game.addPlayer(player2);
 		expect(game.numPlayers()).toEqual(2);
 	});
-	
+
 	it("should add a turn", function(){
 		var turn = {};
 		game.addTurn(turn);
@@ -52,8 +52,7 @@ describe("A Game", function(){
 		it("should have two players", function(){
 			var player1 = {};
 			var player2 = {};
-			game.addPlayer(player1);
-			game.addPlayer(player2);
+			game.setUp(player1, player2);
 			expect(game.isSetted()).toBeTruthy();
 		});
 
@@ -62,8 +61,4 @@ describe("A Game", function(){
 			expect(game.start()).toBeTruthy();
 		})
 	});
-
-
-
-
 });
