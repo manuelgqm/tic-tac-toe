@@ -33,12 +33,15 @@ var Game = {
 		return this.turns.length;
 	},
 
-	start: function(){
-		return this.isSetted();
+	setUp:  function(){
+		var player1 = {};
+		var player2 = {};
+		this.addPlayer(player1);
+		this.addPlayer(player2);
 	},
 
-	currentTurnNumber:  function(){
-		return 1;
+	start: function(){
+		return this.isSetted();
 	}
 
 }

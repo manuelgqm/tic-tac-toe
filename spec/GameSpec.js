@@ -44,8 +44,8 @@ describe("A Game", function(){
 		});
 
 		it("should start", function(){
-			game.start();
-			expect(game.currentTurnNumber()).toEqual(1);
+			game.setUp();
+			expect(game.start()).toBeTruthy();
 		})
 	});
 
