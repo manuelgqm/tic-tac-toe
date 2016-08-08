@@ -21,5 +21,14 @@ var Game = {
 
 	isSetted: function(){
 		return this.players.length == this.numPlayersRequired;
+	},
+
+	addTurn: function(turn){
+		return true;
+	},
+
+	numTurns: function(){
+		return 1
 	}
+
 }

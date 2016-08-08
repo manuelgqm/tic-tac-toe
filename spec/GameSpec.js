@@ -40,5 +40,10 @@ describe("A Game", function(){
 		});
 	});
 
+	it("should add a turn", function(){
+		var turn = {};
+		game.addTurn(turn);
+		expect(game.numTurns()).toEqual(1);
+	})
 
 });
