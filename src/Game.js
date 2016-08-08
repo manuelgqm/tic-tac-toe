@@ -6,6 +6,7 @@ var Game = {
 
 	init: function(){
 		this.players = new Array;
+		this.numPlayersRequired = 2;
 		return this;
 	},
 
@@ -19,6 +20,6 @@ var Game = {
 	},
 
 	isSetted: function(){
-		return this.players.length == 2;
+		return this.players.length == this.numPlayersRequired;
 	}
 }
