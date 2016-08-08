@@ -19,6 +19,6 @@ var Game = {
 	},
 
 	isSetted: function(){
-		return false;
+		return this.players.length == 2;
 	}
 }

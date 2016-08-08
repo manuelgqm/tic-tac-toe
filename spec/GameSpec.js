@@ -1,15 +1,15 @@
-describe("Game", function(){
+describe("A Game", function(){
 	var game;
 	beforeEach(function(){
 		game = Game.create();
 	});
 
-	it("Should add a player", function(){
+	it("should add a player", function(){
 		var player = {};
 		expect(game.addPlayer(player).numPlayers()).toEqual(1);
 	});
 
-	it("Should add two players", function(){
+	it("should add two players", function(){
 		var player1 = {};
 		var player2 = {};
 		game.addPlayer(player1);
@@ -17,17 +17,27 @@ describe("Game", function(){
 		expect(game.numPlayers()).toEqual(2);
 	});
 
-	describe("That is not set up", function(){
+	describe("that is not set up", function(){
 
-		it("Should return false if there are no players", function(){
+		it("should return false if there are no players", function(){
 			expect(game.isSetted()).toBeFalsy();
 		});
 
-		it("Should return false if there is one player", function(){
+		it("should return false if there is one player", function(){
 			var player = {};
 			game.addPlayer(player);
 			expect(game.isSetted()).toBeFalsy();
-		})
+		});
+	});
+
+	describe("that is set up", function(){
+		it("should have two players", function(){
+			var player1 = {};
+			var player2 = {};
+			game.addPlayer(player1);
+			game.addPlayer(player2);
+			expect(game.isSetted()).toBeTruthy();
+		});
 	});
 
 
