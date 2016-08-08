@@ -44,6 +44,14 @@ describe("A Game", function(){
 		var turn = {};
 		game.addTurn(turn);
 		expect(game.numTurns()).toEqual(1);
+	});
+
+	it("should add two turns", function(){
+		var turn1 = {};
+		var turn2 = {};
+		game.addTurn(turn1);
+		game.addTurn(turn2);
+		expect(game.numTurns()).toEqual(2);
 	})
 
 });

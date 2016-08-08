@@ -6,6 +6,7 @@ var Game = {
 
 	init: function(){
 		this.players = new Array;
+		this.turns = new Array;
 		this.numPlayersRequired = 2;
 		return this;
 	},
@@ -24,11 +25,12 @@ var Game = {
 	},
 
 	addTurn: function(turn){
-		return true;
+		this.turns.push(turn);
+		return this;
 	},
 
 	numTurns: function(){
-		return 1
+		return this.turns.length;
 	}
 
 }
