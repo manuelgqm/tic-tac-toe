@@ -38,6 +38,11 @@ describe("A Game", function(){
 			game.addPlayer(player2);
 			expect(game.isSetted()).toBeTruthy();
 		});
+
+		it("should start", function(){
+			game.start();
+			expect(game.currentTurnNumber()).toEqual(1);
+		})
 	});
 
 	it("should add a turn", function(){
@@ -52,6 +57,8 @@ describe("A Game", function(){
 		game.addTurn(turn1);
 		game.addTurn(turn2);
 		expect(game.numTurns()).toEqual(2);
-	})
+	});
+
+
 
 });

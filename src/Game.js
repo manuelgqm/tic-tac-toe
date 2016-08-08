@@ -31,6 +31,14 @@ var Game = {
 
 	numTurns: function(){
 		return this.turns.length;
+	},
+
+	start: function(){
+		return true;
+	},
+
+	currentTurnNumber:  function(){
+		return 1;
 	}
 
 }
